@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./CSS/Style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo">Shopping<span>.</span></a>
+
+    <form action="">
+        <input type="search" id="search-bar">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <div id="theme-toggler" class="fas fa-moon"></div>
+        <a href="#" class="fas fa-user"></a>
+        <div class="fa fa-shopping-cart fa-2x openCloseCart" aria-hidden="true">  <span id="itemCount"></span>   </div>
+     
+
+</header>
+
+<!-- header section ends -->
+
+<!-- navbar section  -->
+
+<nav class="navbar">
+
+    <div class="user">
+        <img src="images/user-img.png" alt="">
+        <h3>Beshoy Mokhlis</h3>
+    </div>
+
+    <div class="links">
+        <a href="#home">home</a>
+        <a href="#men-fashion"> man's-fashion</a>
+        <a href="#women">Women's fashion</a>
+        <a href="#featured">featured</a>
+        <a href="#deal">deal</a>
+        <a href="#review">review</a>
+    </div>
+
+    <div id="close" class="fas fa-times"></div>
+
+</nav>
+
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span>special offer</span>
+        <h3>sale upto 50% off</h3>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+    <div class="image">
+        <img src="images/home-img.png" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- category section starts  -->
+
+<section class="category">
+
+    <h1 class="heading"> shop by <span>category</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/cat-1.jpg" alt="">
+            <div class="content">
+                <span>upto 50% off</span>
+                <h3>for womans</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/cat-2.jpg" alt="">
+            <div class="content">
+                <span>upto 50% off</span>
+                <h3>for mans</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- category section ends -->
+<div id="shoppingCart" class="shoppingCart">
+    <div id="cartItemsContainer" class="cartItemsContainer">
+        <h2>Items in your cart</h2>
+        <i class="fas fa-times" aria-hidden="true"></i>
+        <div id="cartItems"></div>
+          <span id="cartTotal"></span>
+        </div>
+    </div>
+</div> 
+
+
+<!-- man's fashion section starts  -->
+
+<section class="men-fashion" id="men-fashion">
+
+    <h1 class="heading"> <span>man's-fashion</span> products </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/M-1-1.png" class="small-image-1" alt="">
+                    <img src="images/M-1-2.png" class="small-image-1" alt="">
+                    <img src="images/M-1-3.png" class="small-image-1" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/M-1-1.png" class="big-image-1" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>polka dot shirt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 290 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="price-container"> 
+                  
+                   <span class="Dollar">$</span> 
+                    <span class="price">12.99</span> 
+                    <span class="price-before">$23.99</span>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/M-2-1.jpg" class="small-image-2" alt="">
+                    <img src="images/M-2-2.jpg" class="small-image-2" alt="">
+                    <img src="images/M-2-3.jpg" class="small-image-2" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/M-2-1.jpg" class="big-image-2" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>colorful shirt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 750 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="price-container">
+                    <span class="Dollar">$</span> 
+                    <span class="price"> 40.99 </span> 
+                    <span class="price-before">$80.99</span>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/M-3-1.png" class="small-image-3" alt="">
+                    <img src="images/M-3-2.png" class="small-image-3" alt="">
+                    <img src="images/M-3-3.png" class="small-image-3" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/M-3-1.png" class="big-image-3" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Men's T-shirt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 250 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="price-container">
+                     <span class="Dollar">$</span>
+                      <span class="price">10.99</span> 
+                      <span class="price-before">$20.99</span>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- men section ends -->
+<!-- women section starts  -->
+
+<section class="women" id="women">
+
+    <h1 class="heading"> <span>womens</span> products </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/W-1-1.jpg" class="small-image-4" alt="">
+                    <img src="images/W-1-2.png" class="small-image-4" alt="">
+                    <img src="images/W-1-3.jpg" class="small-image-4" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/W-1-1.jpg" class="big-image-4" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Long robe</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 1150 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="price-container"> 
+                     <span class="Dollar">$</span>
+                     <span class="price">31.99</span> 
+                     <span class="price-before">$60.99</span>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/W-2-1.png" class="small-image-5" alt="">
+                    <img src="images/W-2-2.png" class="small-image-5" alt="">
+                    <img src="images/W-2-3.png" class="small-image-5" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/W-2-1.png" class="big-image-5" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Shirt and trousers</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 380 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="price-container"> 
+                    <span class="Dollar">$</span> 
+                    <span class="price">90.99</span> 
+                    <span class="price-before">$180.99</span>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/W-3-1.png" class="small-image-6" alt="">
+                    <img src="images/W-3-2.jpg" class="small-image-6" alt="">
+                    <img src="images/W-3-3.jpg" class="small-image-6" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/W-3-1.png" class="big-image-6" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>dress</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 1700 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="price-container"> 
+                    <span class="Dollar">$</span> 
+                    <span class="price">49.99</span>
+                    <span class="price-before">$99.99</span>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- women section ends -->
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured</span> products </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/f-1-1.png" class="small-image-7" alt="">
+                    <img src="images/f-1-2.jpg" class="small-image-7" alt="">
+                    <img src="images/f-1-3.jpg" class="small-image-7" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/f-1-1.png" class="big-image-7" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>man's clothing</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 11344 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="price-container">
+                     <span class="Dollar">$</span> 
+                     <span class="price">18.99</span>
+                      <span class="price-before">$15.99</span>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/f-2-1.png" class="small-image-8" alt="">
+                    <img src="images/f-2-2.png" class="small-image-8" alt="">
+                    <img src="images/f-2-3.jpg" class="small-image-8" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/f-2-1.png" class="big-image-8" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>woman's clothing</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 35600 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="price-container">
+                     <span class="Dollar">$</span> 
+                     <span class="price">79.99</span> 
+                     <span class="price-before">$129.99</span>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/f-3-1.png" class="small-image-9" alt="">
+                    <img src="images/f-3-2.png" class="small-image-9" alt="">
+                    <img src="images/f-3-3.png" class="small-image-9" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/f-3-1.png" class="big-image-9" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>man's clothing</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 250 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="price-container"> 
+                    <span class="Dollar">$</span> 
+                    <span class="price">69.99</span> 
+                    <span class="price-before">$119.99</span>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal" id="deal">
+
+    <h1 class="heading"> special <span>deal</span> </h1>
+
+    <div class="row">
+
+        <div class="content">
+            <span class="discount">upto 50% off</span>
+            <h3 class="text">deal of the day</h3>
+            <div class="count-down">
+                <div class="box">
+                    <h3 id="days">00</h3>
+                    <span>days</span>
+                </div>
+                <div class="box">
+                    <h3 id="hours">00</h3>
+                    <span>hours</span>
+                </div>
+                <div class="box">
+                    <h3 id="minutes">00</h3>
+                    <span>minutes</span>
+                </div>
+                <div class="box">
+                    <h3 id="seconds">00</h3>
+                    <span>seconds</span>
+                </div>
+            </div>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="image">
+            <img src="images/counter-img.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" >
+
+    <h1 class="heading"> customers <span>review</span> </h1>
+
+<div class="review-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil aut praesentium qui non, magnam perspiciatis commodi fugit cumque quos, deserunt quidem esse fuga facilis exercitationem, dolorum itaque corrupti tempore.</p>
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="user-info">
+                        <h3>Abanob</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil aut praesentium qui non, magnam perspiciatis commodi fugit cumque quos, deserunt quidem esse fuga facilis exercitationem, dolorum itaque corrupti tempore.</p>
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="user-info">
+                        <h3>loza</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil aut praesentium qui non, magnam perspiciatis commodi fugit cumque quos, deserunt quidem esse fuga facilis exercitationem, dolorum itaque corrupti tempore.</p>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="user-info">
+                        <h3>Ramy</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil aut praesentium qui non, magnam perspiciatis commodi fugit cumque quos, deserunt quidem esse fuga facilis exercitationem, dolorum itaque corrupti tempore.</p>
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="user-info">
+                        <h3>BERTY</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- review section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+<div class="footer-container">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#men-fashion"> man's-fashion</a>
+            <a href="#women">Women's fashion</a>
+            <a href="#featured">featured</a>
+            <a href="#deal">deal</a>
+            <a href="#review">review</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my favorite</a>
+            <a href="#">my order</a>
+            <a href="#">my cart</a>
+        </div>
+
+    
+        <div class="box">
+            <h3>contact us</h3>
+            <a href="#">+01203649584</a>
+            <a href="#">beshoymokhlisagaiby@gmail.com</a>
+            <a href="#">Assiut, Egypt </a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+    
+
+
+
+
+
+
+
+<script src="js/jquery-3.6.4.min.js"></script>
+
+
+
+
+
+<!-- custom js file link -->
+<script src="./js/scripts.js"></script>
+
+</body>
+</html>
